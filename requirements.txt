@@ -8,3 +8,7 @@ nltk==3.9.1
 spacy==3.6.1
 vaderSentiment==3.3.2
 gensim==4.3.2
+rich==14.2.0
+markdown-it-py==2.2.0
+pygments==2.19.2
+mdurl==0.1.2
