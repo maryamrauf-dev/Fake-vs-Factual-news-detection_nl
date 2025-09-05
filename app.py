@@ -67,3 +67,11 @@ st.pyplot(fig)
 # Classification Report
 report = classification_report(y_test, y_pred, output_dict=True)
 st.write(pd.DataFrame(report).transpose())
+import spacy
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    import spacy.cli
+    spacy.cli.download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
+
